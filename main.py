@@ -22,7 +22,7 @@ def main():
     if minutes < 0 or days < 0 or hours < 0:
         bot.edit_message_text('Регион начался!', cid, mid)
         os._exit(0)
-    text = f'До регионального этапа ВсОШ по Праву осталось {days} дн. {hours} ч. {minutes} мин.'
+    text = f'До заданной даты осталось {days} дн. {hours} ч. {minutes} мин.'
     try:
         bot.edit_message_text(text, cid, mid)
     except telebot.apihelper.ApiTelegramException as error1:
